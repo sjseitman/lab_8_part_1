@@ -1,9 +1,9 @@
 void setup() {
  size(500, 500);
 }
-
+int speed = 1;
 int x = 200;
-
+int car_2_x = 100;
 void draw() {
   noStroke();
   
@@ -28,5 +28,22 @@ void draw() {
   fill(0, 0, 0);
   ellipse(x + 20, 320, 20, 20);
   ellipse(x + 60, 320, 20, 20);
+  
+  fill(150, 150, 150);
+  ellipse(car_2_x + 30, 320, 90, 20);
+
+  fill(0,0,200);
+  rect(car_2_x, 300, 80, 20);
+  rect(car_2_x + 10, 285, 60, 15);
+  
+  fill(150, 170, 200);
+  rect(car_2_x + 47, 287, 20, 10);
+  rect(car_2_x + 25, 287, 20, 10);
+  
+  fill(0, 0, 0);
+  ellipse(car_2_x + 20, 320, 20, 20);
+  ellipse(car_2_x + 60, 320, 20, 20);
+  
+car_2_x += speed;
 
 }
